@@ -1,0 +1,11 @@
+<h1><%= @topic.id ? "Edit Topic" : "Create Topic" %></h1>
+<hr />
+<%= form_for [@sub, @topic] do |f| %>
+  <%= f.label :title %>
+  <%= f.text_field :title, required: true %>
+
+  <%= f.label :body %>
+  <%= f.text_area :body, required: true %>
+
+  <%= f.submit %>
+<% end %>

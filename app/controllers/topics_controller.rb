@@ -29,7 +29,7 @@ class TopicsController < ApplicationController
 
   def update
     if @topic.update(topic_params)
-      redirect_tp [@sub, @topic]
+      redirect_to [@sub, @topic]
     else
       render :edit
     end
