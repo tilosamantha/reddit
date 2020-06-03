@@ -139,7 +139,7 @@ class SubsController < ApplicationController
   end
 
   def update    #look up a particular record and return the record
-    @sub = Sub.find(param[:id])
+    @sub = Sub.find(params[:id])
     if @sub.update(sub_params)
       redirect_to subs_path
     else

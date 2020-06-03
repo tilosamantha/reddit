@@ -1,8 +1,9 @@
 <h1><%= @sub.id ? 'Edit Sub' : 'Create Sub' %></h1>
 
-<%= form_for @sub do |f| %>
+<%= form_for @sub do |f| %>   
   <%= f.label :name %>
   <%= f.text_field :name, required: true %>
 
   <%= f.submit%>
 <% end %>
+
